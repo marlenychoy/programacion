@@ -1,0 +1,39 @@
+<html>
+<heaa>
+	<title>Ingreso con password</title>
+	<LINK REL=StyleSheet HREF="estilo.css" TYPE="text/css" MEDIA=screen> 
+	<script type="text/javascript">
+		function comprobarClave()
+		{
+			clave1 = document.f1.clave1.value
+			clave2 = document.f1.clave2.value
+
+			if (clave1=="godoy" && clave2 == "luna") {
+				alert("Los datos son iguanas...\n Welcome");
+				var href = "prog.html";
+				window.location = href;
+			}
+        else {
+         	     alert("Los datos no son iguanas...\n Repite way");
+			 	var href = "index.html";
+				window.location = href;
+
+         }
+
+		}
+	</script>
+</head>
+
+<body background="ciudad.jpg">
+	<h1 div align="center" style="color: #00FF00"> Ingeso al programa principal </h1>
+
+	<br>
+     <form  action = "" name = "f1"> 
+     <p div align="center" style="color: white">
+     Ingrese Usuario:<input  type="password" name="clave1" size="10"><br>
+     Ingrese Clave  : <input type="password" name="clave2" size="10"><br>
+     <input type="buttom" value="Comprobar" onclick = "comprobarClave()">
+     </p>
+    </form>
+</body>
+</html>
